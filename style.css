@@ -1,0 +1,432 @@
+@font-face {
+    font-family: nb;
+    src: url("./NBInternationalProBoo.ttf");
+}
+
+@font-face {
+    font-family: rejo;
+    src: url("./Rejouice-Headline.ttf");
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: nb;
+}
+
+html,body
+{
+    height: 100%;
+    width: 100%;
+}
+
+.page1
+{
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    position: relative;
+}
+
+.intro
+{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3px;
+}
+
+.intro h3
+{
+    color: bisque;
+    font-weight: 300;
+    
+}
+
+.follower
+{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: rgba(255, 255, 0, 0.61);
+    position: fixed;
+    z-index: 9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+
+.page1 video
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.page1-cont
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+nav
+{
+    width: 100%;
+    position: absolute;
+    color: aliceblue;
+    padding: 40px 30px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h3
+{
+    font-size: 1.6vw;
+    font-weight: 100;
+
+}
+
+nav h4
+{
+    font-size: 1.6vw;
+    font-weight: 100;
+}
+
+.page1-cont h1
+{
+    font-family: rejo;
+    color: aliceblue;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 60%;
+    height: 32vw;
+    width: 100%;
+    font-size: 27vw;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.page1-cont h1 span
+{
+    font-family: rejo;
+    margin-bottom: -80vh;
+}
+
+.page2
+{
+    height: 100vh;
+    width: 100%;
+    background-color: azure;
+
+}
+
+.page2 .page2-top
+{
+    height: fit-content;
+    width: 90%;
+}
+
+.page2 .page2-top .top{
+    width: 100%;
+    height: 10vh;
+    padding: 0 10px;
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border-bottom: 1px solid rgb(78, 78, 78);
+}
+
+.page2 .bottom
+{
+    height: 20vh;
+    width: 100%;
+    font-size: 4vw;
+}
+
+.top
+{
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+}
+
+.top h3
+{
+    font-size: 2vh;
+    font-weight: 100;
+}
+
+.page2-top .bottom
+{
+    height: 50vh;
+    width: 100%;
+    margin: 10px 4vw;
+}
+
+.text
+{
+    height: 70px;
+    width: 100%;
+    border: 1px solid black;
+    background-color: aquamarine;
+    overflow: hidden;
+}
+
+.text span
+{
+    height: 100px;
+    font-family: nb;
+    font-size: 6vh;
+    font-weight: 300;
+    font-display: flex;
+    right: 100%;    
+}
+
+.page2-bottom
+{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page2-bottom h3{
+    font-size: 2vh;
+    padding: 20px;
+    font-weight: 100;
+
+}
+
+.page2-bottom h1
+{
+    font-family: nb;
+    font-size: 6vh;
+    font-weight: 300;
+    border-bottom: 2px solid black;
+    animation-duration: 3s;
+    animation-name: line;
+
+}
+
+.page2-bottom h1::after
+{
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid black;
+    /* background-color: aqua; */
+    animation-duration: 3s;
+    animation-name: line;    
+}
+
+
+.page3
+{
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 25vw;
+}
+
+.page3 .top
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 30px;
+    padding-top: 5vh;
+}
+
+.page3 h2
+{
+    font-weight: 100;
+}
+
+.page3 .card
+{
+    margin-top: 10px;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card .c1
+{
+    height: 100%;
+    width: 31%;
+    background-color: grey;
+}
+
+.page3 .page3-bottom
+{
+    height: fit-content;
+    width: 90%;
+    padding-top: 10vh;
+}
+
+.page3-bottom .top{
+    width: 100%;
+    height: 10vh;
+    padding: 0 10px;
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border-bottom: 1px solid rgb(78, 78, 78);
+}
+
+.top h3
+{
+    font-size: 2vh;
+    font-weight: 100;
+}
+
+.page3-bottom .bottom
+{
+    height: 50vh;
+    width: 100%;
+    margin: 10px 4vw;
+    margin-bottom: 20vh;
+
+}
+
+.page3-bottom .bottom p{
+    font-family: nb;
+    font-size: 6vh;
+    font-weight: 300;
+}
+
+.card .c1
+{
+    position: relative;
+}
+.card video
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+
+.card .c1:hover img
+{
+    opacity: 0;
+}
+
+.page4
+{
+    margin-top: 10vh;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+.page4 h1
+{
+    font-family: rejo;    
+    margin:0 30px;
+    font-size: 13vh;
+    font-weight: 100;
+    border-bottom: 1px solid black;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 70%;
+    margin-top: -17%;
+  }
+
+  .swiper-slide {
+    width: 400px;
+    text-align: center;
+    font-size: 18px;
+    /* background: black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 24%;
+    object-fit: cover;
+    /* background-color: black; */
+  }
+
+  .swiper
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page4boot
+  {
+    padding: 30vh 0;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 10%;
+  }
+
+  .page4boot h1{
+    font-family: nb;
+    font-size: 6vh;
+    font-weight: 100;
+  }
+
+  .page4boot h5
+  {
+    font-weight: 100;
+  }
+
+
+  .page4boot h1::after
+  {
+      content: "";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      height: 10px;
+      border-bottom: 2px solid black;    
+  }
